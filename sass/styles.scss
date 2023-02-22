@@ -1,3 +1,8 @@
+$colorBlanco : #fff;
+$cienPorciento : 100%;
+$fontWeight: 500;
+$fontLine : 32px;
+
 body {
     background-color: #F2EAE2;
 
@@ -14,8 +19,8 @@ body {
         flex-direction: row;
 
         .imagen--desktop {
-            width: 100%;
-            height: 100%;
+            width: $cienPorciento;
+            height: $cienPorciento;
         }
 
         .imagen--mobile {
@@ -24,8 +29,8 @@ body {
     }
 
     .contenedor-frases {
-        width: 100%;
-        background-color: white;
+        width: $cienPorciento;
+        background-color: $colorBlanco;
         padding-left: 35px;
 
         .perfume {
@@ -33,11 +38,9 @@ body {
             height: 15px;
             width: 92px;
 
-
-
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
-            font-weight: 500;
+            font-weight: $fontWeight;
             font-size: 12px;
             line-height: 15px;
             letter-spacing: 5px;
@@ -53,8 +56,8 @@ body {
             font-family: 'Fraunces', serif;
             font-style: normal;
             font-weight: 700;
-            font-size: 32px;
-            line-height: 32px;
+            font-size: $fontLine;
+            line-height: $fontLine;
         }
 
         .parrafo {
@@ -66,7 +69,7 @@ body {
 
             font-family: 'Montserrat';
             font-style: normal;
-            font-weight: 500;
+            font-weight: $fontWeight;
             font-size: 14px;
             line-height: 23px;
         }
@@ -85,8 +88,8 @@ body {
                 font-family: 'Fraunces';
                 font-style: normal;
                 font-weight: 700;
-                font-size: 32px;
-                line-height: 32px;
+                font-size: $fontLine;
+                line-height: $fontLine;
             }
 
             .precio {
@@ -97,7 +100,7 @@ body {
 
                 font-family: 'Montserrat';
                 font-style: normal;
-                font-weight: 500;
+                font-weight: $fontWeight;
                 font-size: 13px;
                 line-height: 23px;
                 text-decoration-line: line-through;
@@ -111,13 +114,13 @@ body {
             border-radius: 8px;
 
             .carrito {
-                color: white;
+                color: $colorBlanco;
 
             }
 
             a {
                 text-decoration: none;
-                color: white;
+                color: $colorBlanco;
                 font-weight: 500;
             }
 
@@ -130,11 +133,14 @@ body {
 }
 
 
+$widthMedia : 295px;
+$bottomMedia : 20px;
+
 @media (min-width:375px) and (max-width:650px) {
     body {
         .contenedor {
             position: relative;
-            bottom: 20px;
+            bottom: $bottomMedia;
             height: 800px;
 
             .contenedor--principal {
@@ -151,25 +157,24 @@ body {
 
                 .imagen--mobile {
                     display: inline-block;
-                    width: 100%;
                     height: 240px;
                 }
 
                 .contenedor-frases {
                     .titulo {
-                        width: 295px;
+                        width: $widthMedia;
                     }
 
                     .parrafo {
                         position: relative;
-                        bottom: 20px;
-                        width: 295px;
+                        bottom: $bottomMedia;
+                        width: $widthMedia;
                     }
 
                     .contenedor--carrito{
                         width: 275px;
                         position: relative;
-                        bottom: 20px;
+                        bottom: $bottomMedia;
                     }
                 }
             }
