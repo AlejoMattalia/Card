@@ -116,8 +116,12 @@ body .contenedor-frases .contenedor--carrito:hover {
     display: none;
   }
   body .contenedor .contenedor--principal .imagen--mobile {
+    border-radius: 20px 20px 0 0;
     display: inline-block;
     height: 240px;
+  }
+  body .contenedor .contenedor--principal .contenedor-frases {
+    border-radius: 0 0 20px 20px;
   }
   body .contenedor .contenedor--principal .contenedor-frases .titulo {
     width: 295px;

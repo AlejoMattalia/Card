@@ -158,11 +158,14 @@ $bottomMedia : 20px;
                 }
 
                 .imagen--mobile {
+                    border-radius: 20px 20px 0 0;
                     display: inline-block;
                     height: 240px;
                 }
 
                 .contenedor-frases {
+                    border-radius: 0 0 20px 20px;
+
                     .titulo {
                         width: $widthMedia;
                     }
