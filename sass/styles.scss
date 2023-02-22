@@ -19,6 +19,7 @@ body {
         flex-direction: row;
 
         .imagen--desktop {
+            border-radius: 20px 0 0 20px;
             width: $cienPorciento;
             height: $cienPorciento;
         }
@@ -29,6 +30,7 @@ body {
     }
 
     .contenedor-frases {
+        border-radius: 0 20px 20px 0;
         width: $cienPorciento;
         background-color: $colorBlanco;
         padding-left: 35px;
